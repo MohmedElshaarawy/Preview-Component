@@ -1,0 +1,229 @@
+ 
+:root{
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+body{
+    width: 100%;
+    background: var(--Grayish-Blue);
+    font-family: system-ui ;
+}
+.container{
+    position: absolute;
+    width: 60%;
+    margin: auto;
+    height: 350px;
+    display: flex;
+    top: 20%;
+    left: 23%;
+    background: var(--Light-Grayish-Blue);
+    border-radius: 10px;
+   
+
+}
+#drawers{
+    width: 400px;
+    height: 350px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+h2{
+    width: 400px;
+    margin: 20px 30px;
+}
+p{ 
+   margin: 20px 30px;
+}
+.icon img{
+    width: 50px;
+    border-radius: 50%;
+    margin: 15px 20px;
+}
+.icon {
+    display: flex;
+    justify-content: space-between;
+}
+.lol{
+    position: absolute;
+    width: 134px;
+    bottom: 64px;
+    left: 483px;
+}
+.share{
+    position: absolute;
+    left: 70%;
+    bottom: 30%;
+}
+ #share{
+    position: absolute;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    margin: 10px 0;
+    left: 155px;
+    bottom: -55px;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--Light-Grayish-Blue);
+    background :var( --Grayish-Blue);
+}
+#closed{
+    position: absolute;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    margin: 10px 0;
+    display: none;
+    left: 155px;
+    bottom: -55px;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--Light-Grayish-Blue);
+    background: var(--Very-Dark-Grayish-Blue);
+}
+
+.share .card {
+    position: relative;
+    width: 379px;
+    height: 71px;
+    background: var( --Very-Dark-Grayish-Blue);
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+
+}
+.share .card::after {
+    position: absolute;
+    width: 15px;
+    content: "";
+    top: 55px;
+    bottom: 0;
+    right: 0;
+    left: 117px;
+    height: 12px;
+    border: 44px solid transparent;
+    border-top: 37px solid var(--Very-Dark-Grayish-Blue) ;
+
+}
+.share .card img {
+    position: relative;
+    top: 13px;
+    width: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.share .card button{
+    position: relative;
+    text-transform: uppercase;
+    bottom: 31px;
+    top: 0px;
+    background: var( --Very-Dark-Grayish-Blue); 
+    color: var(--Grayish-Blue);
+    padding: 5px 20px ;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+    cursor: pointer ;
+}
+
+
+
+
+
+
+
+
+@media (width: 500px) {
+    body{
+        width: 100%;
+    }
+    .container{
+        width: 450px;
+        margin: 0;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    h2 {
+    width: 310px;
+    margin: 20px 50px;
+    }
+    p{
+    
+        margin: 20px  50px;
+        width: 200px;
+    }
+    #drawers{
+        top: 0;
+        width: 450px;
+        border-top-right-radius:10px ;
+        border-bottom-left-radius:0 ;
+    }
+    .share .card {
+        position: relative;
+        width: 300px;
+        height: 70px;
+        background: var( --Very-Dark-Grayish-Blue);
+        border-radius: 10px;
+        text-align: center;
+        display: none;
+    }
+    .share #share{
+        position: absolute;
+        cursor: pointer;
+        width: 30px;
+        height: 20px;
+        margin: 10px 0;
+        left: 100px;
+        top: 200px;
+        border-radius: 30%;
+        text-align: center;
+        background: var(--Light-Grayish-Blue);
+        color : var(--Very-Dark-Grayish-Blue);
+    }
+    #closed{
+        position: absolute;
+        cursor: pointer;
+        width: 30px;
+        height: 20px;
+        margin: 10px 0;
+        display: none;
+        left: 100px;
+        top: 210px;
+        border-radius: 30%;
+        text-align: center;
+        border-radius: 50%;
+        background: var(--Light-Grayish-Blue);
+        color: var(--Very-Dark-Grayish-Blue);
+    }
+    .share .card {
+        position: absolute;
+        top:100px;
+        right :-140px;
+        width: 450px;
+        height: 71px;
+        background: var( --Very-Dark-Grayish-Blue);
+        border-radius: 10px;
+        text-align: center;
+        display: none;
+    
+    }
+    .share .card::after {
+        position: absolute;
+        width: 15px;
+        content: "";
+        top: 55px;
+        bottom: 0;
+        right: 0px;
+        left:340px;
+        height: 12px;
+        border: 44px solid transparent;
+        border-top: 37px solid var(--Very-Dark-Grayish-Blue) ;
+    
+    }
+    
+}
